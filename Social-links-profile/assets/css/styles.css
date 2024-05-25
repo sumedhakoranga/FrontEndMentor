@@ -1,0 +1,118 @@
+:root{
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey: hsl(0, 0%, 20%);
+  --color-darkGrey: hsl(0, 0%, 12%);
+  --color-offBlack: hsl(0, 0%, 8%);
+  --primary-font: 'Inter',sans-serif;
+  --font-weight-extra-bold: 700;
+  --font-weight-medium: 600;
+  --font-weight-normal: 400;
+  --font-size: 14px;
+
+}
+
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf) format('truetype-variations');
+  font-weight: 400 600 700;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: var(--primary-font);
+  box-sizing: border-box;
+}
+
+body, html{
+  height: 100%;
+  min-height: 100vh;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-offBlack);
+  font-size: var(--font-size);
+}
+
+.main{
+  max-width: 344px;
+  width: 100%;
+  height: 520px;
+  background-color: var(--color-darkGrey);
+  border-radius: 20px;
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile img{
+  margin-top: 30px;
+  border-radius: 50%;
+  width: 30%;
+}
+
+.profile h3{
+  color: var(--color-white);
+  margin:10px;
+  font-size: 1.7em;
+  font-weight: var(--font-weight-medium);
+}
+
+.profile p{
+  color: var(--color-green);
+  font-size: 1em;
+  font-weight: var(--font-weight-extra-bold);
+}
+
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio p{
+  margin-top: 10px;
+  color: var(--color-grey);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size);
+}
+
+.button-container{
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  margin: 8px;
+}
+
+.social-button{
+  border: none;
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-grey);
+  font-weight: var(--font-weight-extra-bold);
+  margin: 9px 0;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: var(--font-size);
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.social-button:hover{
+  background-color: var(--color-green);
+  color: var(--color-offBlack)
+}
+
+.social-button:active{
+  background-color: black;
+}

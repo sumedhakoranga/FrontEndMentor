@@ -1,0 +1,124 @@
+:root {
+  --color-nutmeg: hsl(14, 45%, 36%);
+  --color-darkRuspberry: hsl(332, 51%, 32%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-roseWhite: hsl(330, 100%, 98%);
+  --color-Eggshell: hsl(30, 54%, 90%);
+  --color-LightGrey: hsl(30, 18%, 87%);
+  --color-WengeBrown: hsl(30, 10%, 34%);
+  --color-DarkCharcoal: hsl(24, 5%, 18%);
+  --primary-font: "Young Serif";
+  --secondary-font: "outfit";
+  --font-size: 14px;
+}
+
+@font-face {
+  font-family: "Young Serif";
+  src: url(../fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url(../fonts/outfit/Outfit-VariableFont_wght.ttf) format("woff2");
+  font-weight: 400, 600, 700;
+}
+
+body {
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: var(--color-Eggshell);
+}
+
+article {
+  max-width: 500px;
+  margin: 80px auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+header h1 {
+  font-size: 34px;
+  margin-top: 0;
+}
+
+h2 {
+  color: var(--color-nutmeg);
+  padding-bottom: 5px;
+  font-family: var(--primary-font);
+}
+
+ul,
+ol {
+  padding-left: 20px;
+}
+
+ul.custom-numbers li::marker {
+  color: var(--color-nutmeg);
+}
+
+ol.custom-numbers li::marker {
+  color: var(--color-nutmeg);
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+span {
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 2px solid var(--color-LightGrey);
+}
+
+.section-prep-time {
+  background-color: var(--color-roseWhite);
+  padding: 5px 0px 0px 30px;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+.section-prep-time h2 {
+  color: var(--color-darkRuspberry);
+  font-size: 18px;
+}
+
+.section-prep-time ul {
+  padding: 10px;
+}
+
+.section-prep-time li {
+  font-size: 16px;
+  color: var(--color-DarkCharcoal);
+  padding: 5px 0;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  article {
+    padding: 10px;
+  }
+}
